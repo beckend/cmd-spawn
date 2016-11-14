@@ -3,15 +3,15 @@
  */
 import * as gulp from 'gulp';
 import {
-  PATH_BUILD,
+  PATH_BUILD_ES5,
 } from '../../config';
 import { writeAllFiles } from './utils';
 
 const globby = require('globby');
 
-gulp.task('minify:src', async () => {
+gulp.task('minify:src-es5', async () => {
   const filePaths: string[] = await globby([
-    `${PATH_BUILD}/**/*.js`,
+    `${PATH_BUILD_ES5}/**/*.js`,
     '!**/*.spec.*',
     '!**/*.min.*',
   ]);

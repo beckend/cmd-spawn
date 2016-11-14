@@ -8,7 +8,7 @@ before_install:
   - npm -g i npm@latest
 
 before_script:
-  - npm -g i gulp-cli jest-cli ; npm beckend/cmd-spawn
+  - npm -g i gulp-cli jest-cli
 
 script:
   - gulp ci

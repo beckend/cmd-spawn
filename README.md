@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/beckend/cmd-parse.svg?branch=master)](https://travis-ci.org/beckend/cmd-parse)
-[![Coverage Status](https://coveralls.io/repos/github/beckend/cmd-parse/badge.svg?branch=master)](https://coveralls.io/github/beckend/cmd-parse?branch=master)
-[![npm](https://img.shields.io/npm/v/cmd-parse.svg??maxAge=2592000)](https://www.npmjs.com/package/cmd-parse)
+[![Build Status](https://travis-ci.org/beckend/cmd-spawn.svg?branch=master)](https://travis-ci.org/beckend/cmd-spawn)
+[![Coverage Status](https://coveralls.io/repos/github/beckend/cmd-spawn/badge.svg?branch=master)](https://coveralls.io/github/beckend/cmd-spawn?branch=master)
+[![npm](https://img.shields.io/npm/v/cmd-spawn.svg??maxAge=2592000)](https://www.npmjs.com/package/cmd-spawn)
 
-# cmd-parse
+# cmd-spawn
 
 Run shell commands as string. Typescript(+typings) ES2015/ES2017 module. Node 6+ spawn with promises, buffered and unbuffered output, inspired by [node-buffered-spawn](https://github.com/IndigoUnited/node-buffered-spawn).
 
@@ -17,7 +17,7 @@ Features:
 
 ## Install
 
-`npm -S i cmd-parse`
+`npm -S i cmd-spawn`
 
 
 # Usage

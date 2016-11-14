@@ -4,7 +4,7 @@
     "target": "es6",
     "declaration": true,
     "diagnostics": true,
-    "outDir": "./../build"
+    "outDir": "./../build-es5"
   },
   "include": [
     "./**/*.ts",
