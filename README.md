@@ -82,7 +82,7 @@ usage: `cmdSpawn(cmd, options)`
 
 | Parameter | Default | Type | Description |
 |:---|:---|:---|:---|
-| cmd | undefined | `string` or `Array<string>` | command to run, if array is given, the first index is the command and rest is arguments |
+| cmd | undefined | `string` or `Array<string>` | command to run, if array is given, the first index is the command and rest becomes arguments. |
 | options | `{ spawnOpts: {}, crossSpawn: true, buffer: false }` | `object` | Options described below. |
 
 ## options - ? means optional
