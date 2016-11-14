@@ -7,7 +7,7 @@ import * as gulp from 'gulp';
 //  PATH_PACKAGE,
 //} from '../config';
 import * as debugMod from 'debug';
-import { cmdSpawn } from '../../../src/index';
+import { cmdSpawn } from './../../../src/index';
 
 gulp.task('test', async () => {
   const cmd = 'tsc --p ./src/tsconfig-es2015.json';
