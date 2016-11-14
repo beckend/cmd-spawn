@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "diagnostics": true,
+    "outDir": "./../build-es2015"
+  },
+  "include": [
+    "./**/*.ts",
+    "./**/*.tsx"
+  ],
+  "exclude": [
+    "./**/*.spec.ts",
+    "./**/*.spec.tsx"
+  ]
+}

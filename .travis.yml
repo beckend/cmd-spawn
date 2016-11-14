@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+  - 7
+  - 6
+
+before_install:
+  - npm -g i npm@latest
+
+before_script:
+  - npm -g i gulp-cli jest-cli
+
+script:
+  - gulp ci
+
+sudo: false
+
+notifications:
+  email: false

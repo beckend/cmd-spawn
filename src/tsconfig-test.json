@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "strictNullChecks": true,
+        "module": "commonjs",
+        "target": "es2015",
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "jsx": "react"
+    },
+    "include": [
+        "./**/*.spec.ts",
+        "./**/*.spec.tsx"
+    ]
+}
