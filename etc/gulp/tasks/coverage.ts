@@ -7,8 +7,7 @@ import * as debugMod from 'debug';
 import {
   PATH_PACKAGE,
 } from '../config';
-
-const { cmdSpawn } = require('./../../../src/index');
+import { cmdSpawn } from './../../../src';
 
 gulp.task('coverage', async () => {
   const pkg = require(PATH_PACKAGE);
