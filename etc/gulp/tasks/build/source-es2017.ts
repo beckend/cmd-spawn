@@ -1,16 +1,13 @@
 /* tslint:disable: no-console */
 /**
- * Test
+ * es2017 build
  */
-import * as gulp from 'gulp';
-//import {
-//  PATH_PACKAGE,
-//} from '../config';
 import * as debugMod from 'debug';
-import { cmdSpawn } from './../../../src';
+import * as gulp from 'gulp';
+import { cmdSpawn } from '../../../../src';
 
-gulp.task('test', async () => {
-  const cmd = 'tsc --p ./src/tsconfig-es2015.json';
+gulp.task('build:src-es2017', async () => {
+  const cmd = './node_modules/typescript/bin/tsc --p src/tsconfig-es2017.json';
   const debug = debugMod('task-test');
   debug(`running: ${cmd}`);
   const r = await cmdSpawn(cmd, { buffer: true });

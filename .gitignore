@@ -1,6 +1,6 @@
 .DS_Store
 .vscode
-build
+/build
 coverage
 node_modules
 npm-debug.log
