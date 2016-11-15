@@ -1,9 +1,7 @@
 .DS_Store
 .vscode
-/build
+/build-es5
 coverage
 node_modules
 npm-debug.log
-src/**/*.js
-src/**/*.map
 tmp
