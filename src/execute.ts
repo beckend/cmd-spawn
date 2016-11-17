@@ -57,9 +57,9 @@ export const execute: IExecuteFn = ({
       // Use cross or node's spawn if told to
       cp = useCrossSpawn
         ?
-          cSpawn(cmd, cmdArgs, spawnOpts)
+        cSpawn(cmd, cmdArgs, spawnOpts)
         :
-          spawn(cmd, cmdArgs, spawnOpts);
+        spawn(cmd, cmdArgs, spawnOpts);
 
       if (cp.stdout) {
         // cp.stdout.pipe(process.stdout);
@@ -111,15 +111,18 @@ export const execute: IExecuteFn = ({
     promise = new Bluebird<any>((resolve, reject) => {
       cp = useCrossSpawn
         ?
-          cSpawn(cmd, cmdArgs, spawnOpts)
+        cSpawn(cmd, cmdArgs, spawnOpts)
         :
-          spawn(cmd, cmdArgs, spawnOpts);
+        spawn(cmd, cmdArgs, spawnOpts);
       cp.once('error', reject);
-      cp.once('close', (code: number) => {
+      cp.once('close', (code: number, signal: string | null) => {
         if (code === 0) {
           resolve();
         } else {
-          reject(`child process exited with code ${code}`);
+          reject(
+            `child process exited with code ${code}` +
+              signal === null ? '' : ' and signal: ${signal}'
+          );
         }
       });
     });

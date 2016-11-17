@@ -1,6 +1,6 @@
 {
   "name": "cmd-spawn",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Run shell commands as string. Typescript(+typings) ES6 module. Node 6+ spawn with promises, buffered and unbuffered output",
   "homepage": "https://github.com/beckend/cmd-spawn#readme",
   "repository": {
