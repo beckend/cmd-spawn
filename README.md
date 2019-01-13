@@ -25,7 +25,7 @@ Features:
 ### unbuffered(normal spawn)
 
 ```js
-import { cmdSpawn } from 'cmd-spwawn';
+import { cmdSpawn } from 'cmd-spawn';
 // Inherit process.env auto if not overriden
 
 // Told to run the command as is in a shell
